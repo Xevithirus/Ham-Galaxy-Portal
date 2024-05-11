@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #000;
+}
+
+/* ------------------ OPENING VIDEO ---------------------- */
+section{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    padding: 100px;
+}
+
+section video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+
+/* ----------------------NAV BAR ------------------------- */
+nav {
+    display: flex;
+    justify-content: center;
+    /* background-color: #2b024d;
+    border-style: groove;
+    border-color: rgb(177, 19, 169);
+    border-width: 5px; */
+    position: sticky;
+}
+
+/* style nav bar links */
+nav a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+    z-index: 100;
+    top: 0;
+}
+
+/* change color on hover */
+nav a:hover {
+    background-color: #000000;
+    border-radius: 50px;
+    color: white;
+}
+
+nav a:active {
+    background-color: rgb(187, 9, 211);
+}
+
+/* ------------------- MAIN CONTENT ----------------------- */
+section h1 {
+    position: relative;
+        text-align: center;
+        color: #fff;
+        text-shadow: 0 0 15px #ff47c2, 0 0 25px #ff88f9;
+        font-size: 4em;
+}
+
+section h2 {
+    position: relative;
+    text-align: center;
+    color: #fff;
+    text-shadow: 0 0 30px #ff47c2, 0 0 50px #ff88f9;
+    font-size: 10em;
+}
+
+section p {
+    position: relative;
+    color: #fff;
+    font-size: 1.8em;
+}
+
+/* ---------------- PARALLAX IMAGE BAR -------------------- */
+#image-track>.image {
+    width: 40vmin;
+    height: 56vmin;
+    object-fit: cover;
+    object-position: 100% 50%;
+}
+
+#image-track {
+    display: flex;
+    gap: 4vmin;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(0%, -50%);
+}
+
+/* --------------- EMBEDDED YOUTUBE VIDEO ---------------- */
+.container {
+    margin: 0 auto;
+    width: 1280px;
+    height: 720px;
+}

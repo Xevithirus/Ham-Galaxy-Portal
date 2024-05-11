@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fadeout Video Background</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Poppins:300,400,600,700&amp;lang=en"/>
+</head>
+<body>
+    <section class="banner">
+        <div class="banner-video">
+            <video src="video/tech-background-sample.mp4" autoplay="" muted="" loop=""></video>
+        </div>
+        <div class="banner-text">
+            <h2>HAM GALAXY</h2>
+            <nav id="navbar">
+                <a href="index.html">Home</a>
+                <a href="#">Play</a>
+                <a href="#">Community</a>
+                <a href="#">Contact</a>
+            </nav>
+        </div>
+    </section>
+    <section>
+        <div class="content">
+            <h1>Join the Fight!</h1>
+            <br><br>
+            <p>In the 1960s, during a turbulent era of scientific experimentation, humans embarked on a venture that would forever
+                alter the course of evolution on Earth. In their relentless pursuit of enhancing human intelligence, scientists
+                conducted controversial experiments on both pigs and chimpanzees, utilizing a serum designed to accelerate cognitive
+                development. These experiments, however, appeared to be colossal failures at the time, as the expected results did not
+                materialize as anticipated.
+                <br><br> 
+                Unknown to humanity, the intelligence serum had not failed entirely; rather, its effects were far subtler and much
+                slower than expected. Unbeknownst to humans, this serum had subtly altered the genetic code of the test subjects,
+                setting in motion a transformation that would span countless generations.
+                <br><br>
+                As the serum-induced genetic changes manifested, the affected pigs and chimps began to exhibit signs of heightened
+                intelligence over the course of hundreds of generations. Their cognitive abilities expanded at an astonishing rate, far
+                surpassing the natural evolution that humans had undergone. While humanity descended into self-destructive conflicts,
+                driven by wars and a disheartening trend of breeding intellectual mediocrity, the pigs and chimps in the shadows
+                underwent a silent transformation.
+                <br><br>
+                By the time humanity had reached its inevitable demise, leaving the Earth scarred and depleted, the descendants of those
+                experimentally altered pigs and chimps emerged as the most advanced species on the planet. The pigs, carrying the
+                genetic legacy of those 1960s experiments, now possessed unparalleled intelligence, while the AstroChimps, who had been
+                sent into space with the altered gene, had similarly evolved into hyper-intelligent beings.
+                <br><br>
+           </p>
+        </div>
+    </section>
+    <section>
+        <div id="image-track" data-mouse-down-at="0" data-prev-percentage="0">
+            <img class="image" src="./images/Neon-Cruiser.png" alt="" draggable="false" />
+            <img class="image" src="./images/Pig-Corridor.png" alt="" draggable="false" />
+            <img class="image" src="./images/Pig-Cafe.png" alt="" draggable="false" />
+            <img class="image" src="./images/Pig-Laser-Carbine.png" alt="" draggable="false" />
+            <img class="image" src="./images/Pig-Colony-Year-of-the-Pig.png" alt="" draggable="false" />
+            <img class="image" src="./images/Pig-Shop.png" alt="" draggable="false" />
+            <img class="image" src="./images/Red-Fighter.png" alt="" draggable="false" />
+            <img class="image" src="./images/Chimp-Colony.png" alt="" draggable="false" />
+        </div>
+    </section>
+    <section>
+        <div class="content">
+            <p>
+                In the year 2777 CE, the Earth had become a very different place. The humans were gone, their once-mighty civilization
+                reduced to dust by their own folly. In their place stood the intelligent pigs and the AstroChimps, the nearest genetic
+                relatives of the former rulers of Earth. With their exceptional intellect and advanced technologies, they had not only
+                inherited the Earth but had also expanded their dominion into the far reaches of the galaxy.
+                <br><br>
+                Despite their shared genetic heritage and the altered gene that had shaped their destinies, negotiations between the two
+                species ultimately broke down. The AstroChimps were resolute in their belief that they were the rightful heirs to Earth,
+                spurred on by a sense of genetic heritage and destiny.
+                <br><br>
+                War was declared, and it soon spilled beyond the confines of Earth. Both the hyper-intelligent pigs and AstroChimps
+                wielded futuristic technology, turning distant planets and star systems into battlegrounds as they fiercely competed for
+                dominance in the cosmos.
+                <br><br>
+                Their struggle, rooted in the genetic experiments of the 1960s, symbolized the unpredictable and profound consequences
+                of human scientific curiosity. It was a battle for supremacy that transcended Earth's boundaries and would ultimately
+                determine the fate of countless worlds and the legacy of two species born from the remnants of human ambition.
+                <br><br>
+                In this epic tale of evolution, conflict, and ambition, the hyper-intelligent pigs and AstroChimps emerged as the
+                unintended, extraordinary products of humanity's past experiments, forging a new era in intergalactic history. The
+                battle for control of habitable worlds had begun, its outcome shrouded in the mysteries of genetic manipulation and the
+                complex web of evolution.
+                <br><br>
+                Today, the Hognauts and Astrochimps and their various alliances engage in epic space battles throughout the galaxy, as
+                they expand their reaches, contesting habitable worlds and resources and attempting to outpace each other’s technology.
+            </p>
+        </div>
+    </section>
+    <section>
+        <div class="container"">
+            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/0XbXiK0Noe4?si=TGrMGhUj6Vq01LjX"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+            </iframe>
+        </div>
+    </section>
+    <script type="text/javascript">
+        let video = document.querySelector('video');
+        window.addEventListener('scroll' , function(){
+            let value = 1 + window.scrollY / -600;
+            video.style.opacity = value;
+        })
+    </script>
+
+    <script src="./script.js"></script>
+</body>
+</html>
