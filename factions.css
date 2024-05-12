@@ -3,26 +3,36 @@
     flex-wrap: wrap;
 }
 
+main {
+    text-align: center;
+}
+
+.lesser-title {
+    text-align: center;
+    margin-left: 40px;
+}
+
 .hognaut-class {
+    border-color: white;
+    border-width: 2px;
+    background-color: rgb(34, 15, 31);
     width: 100%;
-    box-sizing: border-box;
-    padding-left: 25%;
+    margin: 5%;
+    padding-left: 20%;
     display: flex;
-    flex-direction: row-reverse;
     align-items: center;
 }
 
 .chimp-class {
+    background-color: rgb(34, 34, 15);
     width: 100%;
-    box-sizing: border-box;
+    margin: 5%;
     padding-right: 25%;
     display: flex;
-    flex-direction: row-reverse;
     align-items: center;
 }
 
 @media only screen and (max-width: 768px) {
-
     .hognaut-class,
     .chimp-class {
         width: 100%;
