@@ -17,7 +17,6 @@ section{
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
     padding: 100px;
 }
 
@@ -32,49 +31,48 @@ section video {
 }
 
 /* ----------------------NAV BAR ------------------------- */
-nav {
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
     display: flex;
     justify-content: center;
-    /* background-color: #2b024d;
-    border-style: groove;
-    border-color: rgb(177, 19, 169);
-    border-width: 5px; */
-    position: sticky;
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
-/* style nav bar links */
-nav a {
-    color: white;
-    padding: 14px 20px;
+header a {
+    color: #ff88f9;
+    font-size: 2em;
+    padding: 2px 20px;
     text-decoration: none;
     text-align: center;
-    z-index: 100;
-    top: 0;
-}
-
-/* change color on hover */
-nav a:hover {
-    background-color: #000000;
     border-radius: 50px;
-    color: white;
 }
 
-nav a:active {
-    background-color: rgb(187, 9, 211);
+header a:hover {
+    transition: 0.7s;
+    color: #fff;
+    text-shadow: 0 0 30px #ff47c2, 0 0 50px #ff88f9;
 }
+
+header a:active {
+    color: #000;
+    background-color: #ff88f9;
+}
+
 
 /* ------------------- MAIN CONTENT ----------------------- */
 section h1 {
     position: relative;
-        text-align: center;
-        color: #fff;
-        text-shadow: 0 0 15px #ff47c2, 0 0 25px #ff88f9;
-        font-size: 4em;
+    text-align: center;
+    color: #fff;
+    text-shadow: 0 0 15px #ff47c2, 0 0 25px #ff88f9;
+    font-size: 4em;
 }
 
-section h2 {
+section #title-text {
     position: relative;
-    text-align: center;
+    align-items: center;
     color: #fff;
     text-shadow: 0 0 30px #ff47c2, 0 0 50px #ff88f9;
     font-size: 10em;
@@ -89,14 +87,14 @@ section p {
 /* ---------------- PARALLAX IMAGE BAR -------------------- */
 #image-track>.image {
     width: 40vmin;
-    height: 56vmin;
+    height: 60vmin;
     object-fit: cover;
     object-position: 100% 50%;
 }
 
 #image-track {
     display: flex;
-    gap: 4vmin;
+    gap: 6vmin;
     position: absolute;
     left: 50%;
     top: 50%;
@@ -108,4 +106,54 @@ section p {
     margin: 0 auto;
     width: 1280px;
     height: 720px;
+}
+
+#video-title {
+        color: #fff;
+        text-shadow: 0 0 15px #ff47c2, 0 0 25px #ff88f9;
+        font-size: 2em;
+}
+
+/* ----------------------- FOOTER ------------------------ */
+footer {
+    background-color: #000;
+}
+
+.footer-class {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 0px 30px 20px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+}
+
+.social-icons a {
+    text-decoration: none;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 50%;
+    border-color: #ff88f9;
+}
+
+.social-icons a {
+    font-size: 2em;
+    color: rgb(243, 155, 255);
+    opacity: 0.9;
+}
+
+.social-icons a:hover {
+    transition: 0.7s;
+    color: #fff;
+    text-shadow: 0 0 15px #ff47c2, 0 0 25px #ff88f9;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: center;
+    color: #ff88f9;
+    padding: 0px 0px 50px;
 }

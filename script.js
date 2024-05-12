@@ -34,3 +34,26 @@ window.onmousemove = e => {
         }, { duration: 1200, fill: "forwards" });
     }
 }
+
+//------------------------------- STICKY NAVBAR ------------------------------------
+let navbar = document.getElementsByClassName("navbar")[0];
+let navbarOffsetTop = navbar.offsetTop; // Get initial offset of nav from top of viewport
+let isFixed = false;
+
+window.onscroll = () => {
+    let scrollTop = window.scrollY;
+
+    if (scrollTop >= navbarOffsetTop) {
+        navbar.style.position = "fixed";
+        navbar.style.top = "0"; // Ensure the navbar sticks to the top
+        navbar.style.left = "50%";
+        navbar.style.transform = "translateX(-50%)";
+        isFixed = true;
+    } else {
+        navbar.style.position = ""; // Reset position to default
+        navbar.style.top = "";
+        navbar.style.left = "";
+        navbar.style.transform = "";
+        isFixed = false;
+    }
+}
