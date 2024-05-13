@@ -1,3 +1,4 @@
+/* Global */
 *{
     margin: 0;
     padding: 0;
@@ -5,12 +6,13 @@
     font-family: 'Poppins', sans-serif;
 }
 
+/* Global */
 body {
     background-color: #000;
     overflow-x: hidden;  /* Required to prevent side scroll bar appearing due to parallax image bar. */
 }
 
-/* ------------------ OPENING VIDEO ---------------------- */
+/* Global */
 section{
     position: relative;
     width: 100%;
@@ -20,6 +22,7 @@ section{
     align-items: center;
     padding: 100px;
 }
+/* ------------------ OPENING VIDEO ---------------------- */
 
 section video {
     position: absolute;
@@ -63,7 +66,7 @@ header a:active {
 
 
 /* ------------------- MAIN CONTENT ----------------------- */
-h1 {
+.story-title {
     position: relative;
     text-align: center;
     color: #fff;
@@ -140,9 +143,6 @@ footer {
     margin: 0px;
     border-radius: 50%;
     border-color: #ff88f9;
-}
-
-.social-icons a {
     font-size: 2em;
     color: rgb(243, 155, 255);
     opacity: 0.9;

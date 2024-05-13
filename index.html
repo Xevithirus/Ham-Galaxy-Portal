@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ham Galaxy Portal</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./index.css">
     <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Poppins:300,400,600,700&amp;lang=en"/>
     <script src="https://kit.fontawesome.com/9e4cb2d322.js" crossorigin="anonymous"></script>
 </head>
@@ -12,7 +12,6 @@
     <section class="banner">
         <div class="banner-video">
             <video src="video/dna-background.mp4" autoplay="" muted="" loop=""></video>
-        </div>
         <div class="banner-text">
             <h2 id="title-text">HAM GALAXY</h2>
             <header class="navbar">
@@ -22,11 +21,10 @@
                 <a href="community.html">Community</a>
                 <a href="shop.html">Shop</a>
             </header>
-        </div>
     </section>
     <section>
         <div class="content">
-            <h1>Origins</h1>
+            <h1 class="story-title">Origins</h1>
             <br><br>
             <p>In the 1960s, during a turbulent era of scientific experimentation, humans embarked on a venture that would forever
                 alter the course of evolution on Earth. In their relentless pursuit to enhance human intelligence, scientists
@@ -107,7 +105,7 @@
     <script type="text/javascript">
         let video = document.querySelector('video');
         window.addEventListener('scroll' , function(){
-            let value = 1 + window.scrollY / -600;
+            let value = 1 + window.scrollY / -900;
             video.style.opacity = value;
         })
     </script>
