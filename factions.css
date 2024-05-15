@@ -3,6 +3,14 @@
     flex-wrap: wrap;
 }
 
+.faction-title {
+    color: #fff;
+    text-shadow: 0 0 15px rgb(255, 251, 0), 0 0 25px #fffb00;
+    font-weight: bold;
+    font-size: 3em;
+    padding: 20px;
+}
+
 .character-container {
     background-color: #000;
     display: flex;
