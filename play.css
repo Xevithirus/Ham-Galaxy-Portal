@@ -64,3 +64,16 @@ input[type=password]:focus {
 .btn:hover {
     opacity: 1;
 }
+
+.btn:active {
+    cursor: url(images/supernova.png), auto;
+}
+
+/* Set cursor hover to password reset link */
+.password-reset-class:hover {
+    cursor: url(images/spaceship.png), auto;
+}
+
+.password-reset-class:active {
+    cursor: url(images/supernova.png), auto;
+}

@@ -27,7 +27,6 @@ window.onmousemove = e => {
         transform: `translate(${limitedNextPercentage}%, -50%)`
     }, { duration: 1200, fill: "forwards" });
 
-    
     for (const image of track.getElementsByClassName("image")) {
         image.animate({
             objectPosition: `${100 + limitedNextPercentage}% Center`

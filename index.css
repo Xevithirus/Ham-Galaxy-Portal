@@ -10,6 +10,12 @@
 body {
     background-color: #000;
     overflow-x: hidden;  /* Required to prevent side scroll bar appearing due to parallax image bar. */
+    cursor: url(images/spaceship.png), auto;
+}
+
+button:hover,
+button:focus {
+    cursor: url(images/spaceship.png), auto;
 }
 
 /* Global */
@@ -57,9 +63,11 @@ header a:hover {
     transition: 0.7s;
     color: #fff;
     text-shadow: 0 0 30px #ff47c2, 0 0 50px #ff88f9;
+    cursor: url(images/spaceship.png), auto;
 }
 
 header a:active {
+    cursor: url(images/supernova.png), auto;
     color: #000;
     background-color: #ff88f9;
 }
@@ -149,9 +157,14 @@ footer {
 }
 
 .social-icons a:hover {
+    cursor: url(images/spaceship.png), auto;
     transition: 0.7s;
     color: #fff;
     text-shadow: 0 0 15px #ff47c2, 0 0 25px #ff88f9;
+}
+
+.social-icons a:active {
+    cursor: url(images/supernova.png), auto;
 }
 
 .footer-bottom p {
@@ -161,3 +174,15 @@ footer {
     font-size: 20px;
     padding: 0px 0px 50px;
 }
+
+
+/* Attributions for cursor images */
+
+/*
+Spaceship:
+<a href="https://www.flaticon.com/free-icons/spaceship" title="spaceship icons">Spaceship icons created by Flat Icons - Flaticon</a>
+
+Explosion:
+<a href="https://www.flaticon.com/free-icons/explosion" title="explosion icons">Explosion icons created by Victoruler - Flaticon</a>
+
+*/
