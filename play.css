@@ -80,11 +80,11 @@ input[type=password]:focus {
 
 /* Countdown Timer */
 .countdown-timer {
-    background-color: #000;
     padding-top: 10px;
     display: flex; 
+    flex-direction: column;
     justify-content: center;
     color: rgb(255, 255, 255); 
-    text-shadow: 0 0 30px #ff47c2, 0 0 50px #ff88f9;
+    text-shadow: 0 0 10px #ff47c2, 0 0 20px #ff88f9;
     font-size: 30;
 }

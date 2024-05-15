@@ -90,10 +90,11 @@ header a:active {
     font-size: 10em;
 }
 
-p {
+.story-text {
     position: relative;
-    padding-left: 10em;
-    padding-right: 10em;
+    padding-left: 5em;
+    padding-right: 5em;
+    text-align:justify;
     color: #fff;
     font-size: 1.8em;
 }
