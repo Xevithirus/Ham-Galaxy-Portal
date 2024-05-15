@@ -27,13 +27,16 @@
 
 .character .info-box {
     position: absolute;
+    font-family: "Poppins";
+    text-align: justify;
+    font-size: 24px;
     right: 10px;
     top: 0;
     opacity: 0;
     background-color: #1f1f1f;
     border-radius: 8px;
     color: white;
-    padding: 10px;
+    padding: 30px;
     border: 1px solid #fffbda;
     box-shadow: 0 0 20px rgb(255, 251, 0);
     transition: opacity 0.3s ease, width 0.3s ease, left 0.5s ease;
@@ -43,13 +46,10 @@
 
 .character:hover img {
     transform: translateX(-600px);
-    /* Move image left to reveal info box */
 }
 
 .character:hover .info-box {
     opacity: 1;
     width: 900px;
-    /* Desired width of the info box */
     left: 0vh;
-    /* Aligns the info-box with the left side of the character div */
 }
