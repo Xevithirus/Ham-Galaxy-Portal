@@ -58,5 +58,3 @@ window.onscroll = () => {
         isFixed = false;
     }
 }
-
-
