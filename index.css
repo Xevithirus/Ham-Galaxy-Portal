@@ -108,6 +108,7 @@ header a:active {
 }
 
 #image-track {
+    user-select: none;
     display: flex;
     gap: 6vmin;
     position: absolute;
