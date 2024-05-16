@@ -50,6 +50,7 @@
     transition: opacity 0.3s ease, width 0.3s ease, left 0.5s ease;
     overflow: hidden;
     height: 100%;
+    width: 0px;
 }
 
 .character:hover img {
@@ -57,8 +58,14 @@
 }
 
 .character:hover .info-box {
+    transition: 0.5s;
     opacity: 1;
     width: 900px;
+    left: 0vh;
+}
+.character:not(:hover) .info-box {
+    transition: 0.5s;
+    opacity: 0;
     left: 0vh;
 }
 
