@@ -37,7 +37,7 @@
     position: absolute;
     font-family: "Poppins";
     text-align: justify;
-    font-size: 24px;
+    font-size: 22px;
     right: 10px;
     top: 0;
     opacity: 0;
@@ -60,4 +60,53 @@
     opacity: 1;
     width: 900px;
     left: 0vh;
+}
+
+/* Stat Bars */
+.stat-bars {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    width: 1250px;
+    margin-bottom: 50px;
+}
+
+.stat-bar {
+    margin-bottom: 10px;
+}
+
+.bar-name {
+    display: inline-block;
+    width: 250px;
+    color: #fff;
+    font-weight: 500;
+    font-family: 'Orbitron', sans-serif;
+    text-align: left;
+}
+
+.bar-stat {
+    display: inline-block;
+    width: 50px;
+    color: #fff;
+    font-weight: 500;
+    font-family: 'Orbitron', sans-serif;
+    text-align: right;
+}
+
+.bar {
+    display: inline-block;
+    width: 200px;
+    height: 14px;
+    background-color: #444;
+    border-radius: 10px;
+    overflow: hidden;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+
+.bar .fill {
+    height: 100%;
+    background-color: #fffb00;
+    border-radius: 10px 0 0 10px;
 }
