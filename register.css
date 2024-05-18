@@ -1,0 +1,185 @@
+/* ------------------------------ HEADER -------------------------------- */
+.navbar {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 3px;
+}
+
+header a {
+    color: #ff88f9;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 2px 20px;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 50px;
+}
+
+header a:hover {
+    transition: 0.7s;
+    color: #fff;
+    text-shadow: 0 0 30px #ff47c2, 0 0 50px #ff88f9;
+    cursor: url(images/spaceship.png), auto;
+}
+
+header a:active {
+    cursor: url(images/supernova.png), auto;
+    color: #000;
+    background-color: #ff88f9;
+}
+
+/* ------------------------------ MAIN CONTENT --------------------------------- */
+body {
+    background: #000;
+    cursor: url(images/spaceship.png), auto;
+}
+
+.container {
+    max-width: 660px;
+    min-height: 480px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.register-header {
+    background: #000 url(./images/HG-Concept-Screenshot.jpg)
+    center / cover;
+    text-align: center;
+    padding: 70px 0;
+    color: white;
+    border-bottom: 0px solid #ff47c2;
+    border-radius: 10px;
+    /* box-shadow: 0 0 10px #ff47c2, 0 0 15px #ff88f9; */
+    box-shadow: 0 10px 50px -10px #471945;
+}   
+
+.register-title {
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 700;
+    text-shadow: 0 0 30px #ff47c2, 0 0 50px #ff88f9;
+    font-size: 5em;
+    line-height: 1.2em;
+    transform: skewY(-5deg);
+    text-align: center;
+}
+
+.register-header p {
+    font-size: 18px;
+    max-width: 540px;
+    margin: 0 auto;
+}
+
+#register-form {
+    background-color: #191320;
+    border-radius: 8px;
+    padding: 30px;
+    margin: -90px 0 0px;
+    font-size: 20px;
+    position: relative;
+    box-shadow: 0 8px 15px #020202, 0px 10px 50px #471945;
+}
+
+form input {
+    cursor: url(images/spaceship.png), auto;
+    display: block;
+    width: 95%;
+    border-radius: 8px;
+    border-color: #030103;
+    height: 40px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 20px;
+    font-family: 'Orbitron', sans-serif;
+    color: #FFF;
+    background: #110c18;
+    transition: 0.5s;
+}
+
+form input:focus{ 
+    outline: none;
+    box-shadow: 0px 0px 20px 5px #ad3aa8;
+    filter: contrast(85%);
+}
+
+form input:active {
+    cursor: url(images/supernova.png), auto;
+}
+
+form label {
+    font-family: 'Orbitron', sans-serif;
+    color: #FFF;
+    display: inline-block;
+    margin-bottom: 5px;
+    margin-top: 10px;
+    cursor: url(images/spaceship.png), auto;
+}
+
+form .register-button {
+    max-width: 250px;
+    background: #160215;
+    border:#ff47c2 2px solid;
+    box-shadow: 0 4px 8px #020202, 0px 5px 25px #471945;
+    border-radius: 45px;
+    line-height: normal;
+    font-weight: 500;
+    margin: 40px auto -50px;
+}
+
+form .register-button:hover {
+    background-color: #ff47c2;
+    border: #471945 2px solid;
+    color: black;
+    cursor: url(images/spaceship.png), auto;
+}
+
+form .register-button:active {
+    cursor: url(images/supernova.png), auto;
+}
+
+/* ------------------------ FOOTER & SOCIAL ICONS -----------------------  */
+
+.footer-class {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.social-icons a {
+    text-decoration: none;
+    padding: 10px;
+    margin: 0px;
+    border-radius: 50%;
+    border-color: #ff88f9;
+    font-size: 2em;
+    color: rgb(243, 155, 255);
+    opacity: 0.9;
+}
+
+.social-icons a:hover {
+    cursor: url(images/spaceship.png), auto;
+    transition: 0.7s;
+    color: #fff;
+    text-shadow: 0 0 15px #ff47c2, 0 0 25px #ff88f9;
+}
+
+.social-icons a:active {
+    cursor: url(images/supernova.png), auto;
+}
+
+.footer-bottom p {
+    display: flex;
+    justify-content: center;
+    color: #ff88f9;
+    font-size: 20px;
+    padding: 0px 0px 50px;
+}
