@@ -1,0 +1,3 @@
+[submodule "Quake3"]
+	path = Quake3
+	url = https://github.com/lrusso/Quake3.git
