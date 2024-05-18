@@ -79,8 +79,13 @@ input[type=password]:focus {
 }
 
 /* Countdown Timer */
+.timer-label {
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 10px #ff47c2, 0 0 20px #ff88f9;
+    font-size: 80;
+}
+
 .countdown-timer {
-    padding-top: 10px;
     display: flex; 
     flex-direction: column;
     justify-content: center;

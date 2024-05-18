@@ -19,21 +19,82 @@
         <a href="#">Community</a>
         <a href="#">Shop</a>
     </header>
-    <header class="register-header">
-        <div class="container">
-            <h1 class="register-title">Register for Early Access!</h1>
+    <div class="register-header">
+        <h1 class="register-title">Register for Early Access!</h1>
+        <div class="countdown-timer">
+            <h1 class="timer-label" >TIME TO LAUNCH</h1>
+            <p id="timer" style="text-align: center;"></p>
         </div>
-    </header>
+    </div>
     <div class="container">
-    <form action="" id="register-form">
-            <label for="name">Name</label>
-            <input type="text" value="" name="name">
-            <label for="email">Email</label>
-            <input type="email" value="" name="email">
-            <input type="submit" class="register-button" name="Register" value="Register">
-        </form>
+        <div id="mc_embed_shell">
+            <div id="mc_embed_signup">
+                <form
+                    action="https://gmail.us17.list-manage.com/subscribe/post?u=afdfaeee75f80a89a632f564b&amp;id=4c00cbcb0e&amp;f_id=00dac2e1f0"
+                    method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate"
+                    target="_blank">
+                    <div id="mc_embed_signup_scroll">
+                        <div class="mc-field-group"><label for="mce-FNAME">Name </label><input type="text" name="FNAME"
+                                class=" text" id="mce-FNAME" value=""></div>
+                        <div class="mc-field-group"><label for="mce-EMAIL">Email<span class="asterisk"> *</span></label>
+                            <input type="email" name="EMAIL" class="required email" id="mce-EMAIL" value="" required="">
+                        </div>
+                        <div id="mce-responses" class="clear foot">
+                            <div class="response" id="mce-error-response" style="display: none;">You've already registered.</div>
+                            <div class="response" id="mce-success-response" style="display: none;">Registration complete!</div>
+                        </div>
+                        <div aria-hidden="true" style="position: absolute; left: -5000px;">
+                            /* real people should not fill this in and expect good things - do not remove this or risk form bot
+                            signups */
+                            <input type="text" name="b_afdfaeee75f80a89a632f564b_4c00cbcb0e" tabindex="-1" value="">
+                        </div>
+                        <div class="optionalParent">
+                            <div class="clear foot">
+                                <input type="submit" name="subscribe" id="mc-embedded-subscribe" class="register-button"
+                                    value="Register">
+                                <!-- <p style="margin: 0px auto;"><a href="http://eepurl.com/iQfLao"
+                                        title="Mailchimp - email marketing made easy and fun"><span
+                                            style="display: inline-block; background-color: transparent; border-radius: 4px;"><img
+                                                class="refferal_badge"
+                                                src="https://digitalasset.intuit.com/render/content/dam/intuit/mc-fe/en_us/images/intuit-mc-rewards-text-dark.svg"
+                                                alt="Intuit Mailchimp"
+                                                style="width: 220px; height: 40px; display: flex; padding: 2px 0px; justify-content: center; align-items: center;"></span></a>
+                                </p> -->
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
+            <script
+                type="text/javascript">(function ($) { window.fnames = new Array(); window.ftypes = new Array(); fnames[1] = 'FNAME'; ftypes[1] = 'text'; fnames[0] = 'EMAIL'; ftypes[0] = 'email'; fnames[2] = 'LNAME'; ftypes[2] = 'text'; fnames[3] = 'ADDRESS'; ftypes[3] = 'address'; fnames[4] = 'PHONE'; ftypes[4] = 'phone'; fnames[5] = 'BIRTHDAY'; ftypes[5] = 'birthday'; }(jQuery)); var $mcj = jQuery.noConflict(true);</script>
+        </div>
     </div>
     <p style="color: rgb(190, 190, 190); font-family: 'Poppins', auto; text-align: center;">While you wait for Ham Galaxy, feel free to play some Quake 3!</p>
+    <script>
+        // Set the date we're counting down to
+        var countDownDate = new Date("Oct 31, 2025 15:37:25").getTime();
+
+        // Update the count down every 1 second
+        var x = setInterval(function () {
+            var now = new Date().getTime();
+            var distance = countDownDate - now;
+
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            document.getElementById("timer").innerHTML = days + " : " + hours + " : "
+                + minutes + " : " + seconds;
+
+            // If the count down is finished, write some text
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("timer").innerHTML = "EXPIRED";
+            }
+        }, 1000);
+    </script>
     <div class="footer-class">
         <div class="social-icons">
             <a href=""><i class="fa-brands fa-facebook"></i></a>
