@@ -77,11 +77,13 @@ header a:active {
 
 /* ------------------- MAIN CONTENT ----------------------- */
 .story-title {
+    font-family: 'Orbitron', sans-serif;
     position: relative;
     text-align: center;
     color: #fff;
     text-shadow: 0 0 15px #ff47c2, 0 0 25px #ff88f9;
     font-size: 4em;
+    font-weight: 600;
 }
 
 #title-text {

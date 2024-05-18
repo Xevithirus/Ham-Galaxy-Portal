@@ -4,6 +4,7 @@
 }
 
 .faction-title {
+    font-family: 'Orbitron', sans-serif;
     color: #fff;
     text-shadow: 0 0 15px rgb(255, 251, 0), 0 0 25px #fffb00;
     font-weight: bold;
