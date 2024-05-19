@@ -133,3 +133,96 @@
     background-color: #fffb00;
     border-radius: 10px 0 0 10px;
 }
+
+/* ------------------- MOBILE SUPPORT ------------------- */
+@media (max-width: 768px) {
+    .flex-container {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .faction-page-title {
+        font-size: 3em;
+        padding: 5px;
+    }
+
+    .faction-title {
+        font-size: 2em;
+        padding: 10px;
+    }
+
+    .character img {
+        width: 300px;
+        /* Adjust image width for smaller screens */
+    }
+    
+    .character-container {
+        padding: 5px;
+        /* Adjust container padding for smaller screens */
+    }
+    
+    .character {
+        margin: 30px 0;
+        /* Adjust character margin for smaller screens */
+    }
+    
+    .character .info-box {
+        font-size: 10px;
+        /* Adjust font size for smaller screens */
+        padding: 20px;
+        /* Adjust padding for smaller screens */
+    }
+    
+    /* Include hover effects for smaller screens */
+    .character:hover img {
+        transform: translateX(-300px);
+        /* Adjust hover effect for smaller screens */
+    }
+    
+    .character:hover .info-box {
+        width: 100%;
+        /* Adjust width for smaller screens */
+        opacity: 1;
+        left: 0;
+    }
+    
+    .character:not(:hover) .info-box {
+        opacity: 0;
+    }
+
+    .stat-bars {
+        width: 100%;
+        justify-content: center;
+        font-size: 10px;
+    }
+    
+    .stat-bar {
+        margin-bottom: 20px;
+        /* Increase margin for better spacing on smaller screens */
+        width: 90%;
+        /* Adjust width to fit the screen width */
+        max-width: 400px;
+        /* Limit width on smaller screens */
+    }
+    
+    .bar-name {
+        width: 30%;
+    }
+
+    .bar-stat {
+        width: 10%;
+        /* Adjust width to fit the screen width */
+    }
+    
+    .bar {
+        width: 50%;
+        height: 10px;
+        margin-left: 2px;
+        /* Adjust width to fit the screen width */
+        max-width: 250px;
+        /* Limit width on smaller screens */
+        margin-left: 0;
+        /* Remove left margin to center bars */
+    }
+}

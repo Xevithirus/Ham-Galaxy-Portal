@@ -40,6 +40,13 @@ section video {
     pointer-events: none;
 }
 
+#title-text {
+    font-size: 140px;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 900;
+    text-align: center;
+}
+
 /* ----------------------NAV BAR ------------------------- */
 header {
     position: sticky;
@@ -122,7 +129,7 @@ header a:active {
 }
 
 /* --------------- EMBEDDED YOUTUBE VIDEO ---------------- */
-.container {
+.container-youtube {
     margin: 0 auto;
     width: 1280px;
     height: 720px;
@@ -132,8 +139,10 @@ header a:active {
     color: #fff;
     text-shadow: 0 0 15px #ff47c2, 0 0 25px #ff88f9;
     font-size: 2em;
-    padding: 0;
+    text-align: center;
+    padding-bottom: 20px;
 }
+
 
 /* ----------------------- FOOTER ------------------------ */
 footer {
@@ -181,6 +190,101 @@ footer {
     padding: 0px 0px 50px;
 }
 
+/* ---------------------- MOBILE SUPPORT --------------------------*/
+@media (max-width: 768px) {
+    section {
+        padding: 50px 20px;
+    }
+
+    .story-title {
+        font-size: 2.5em;
+    }
+
+    #title-text {
+        font-size: 4em;
+        text-align: center;
+    }
+
+    .story-text {
+        padding: 20px;
+        font-size: 1.2em;
+    }
+
+    header a {
+        font-size: 8px;
+        padding: 2px 10px;
+    }
+
+    #image-track {
+        width: 100%;
+        /* Adjust width to fit the screen width */
+        left: 0;
+        /* Position the parallax scroll bar at the left edge of the screen */
+        top: 50%;
+        /* Center vertically */
+        transform: translateY(-50%);
+        /* Adjust vertical positioning */
+        justify-content: center;
+        /* Center the images horizontally */
+        gap: 20px;
+        /* Increase gap between images for better spacing on smaller screens */
+        overflow-x: auto;
+        /* Enable horizontal scrolling if needed */
+        overflow-y: hidden;
+        /* Disable vertical scrolling */
+        white-space: nowrap;
+        /* Prevent wrapping of images */
+    }
+
+    #image-track {
+        width: 100%;
+        /* Adjust width to fit the screen width */
+        left: 0;
+        /* Position the parallax scroll bar at the left edge of the screen */
+        top: 50%;
+        /* Center vertically */
+        transform: translateY(-50%);
+        /* Adjust vertical positioning */
+        justify-content: flex-start;
+        /* Start the images from the left edge */
+        gap: 20px;
+        /* Increase gap between images for better spacing on smaller screens */
+        overflow-x: auto;
+        /* Enable horizontal scrolling if needed */
+        overflow-y: hidden;
+        /* Disable vertical scrolling */
+        white-space: nowrap;
+        /* Prevent wrapping of images */
+    }
+
+    #image-track>.image {
+        width: 80vw;
+        /* Adjust width relative to the viewport width */
+        height: auto;
+        /* Allow height to adjust proportionally */
+        max-width: none;
+        /* Remove max-width restriction */
+    }
+
+    .container-youtube {
+        width: 100%;
+        /* Adjust width to fit the screen width */
+        height: auto;
+        /* Let the height adjust proportionally */
+        max-width: 100%;
+        /* Ensure video doesn't overflow on small screens */
+        padding: 0 20px;
+        /* Add padding to adjust for smaller screens */
+    }
+
+    .social-icons a {
+        font-size: 1.5em;
+    }
+
+    .footer-bottom p {
+        font-size: 16px;
+    }
+}
 
 /* Attributions for cursor images */
 
