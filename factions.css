@@ -3,6 +3,7 @@
     flex-wrap: wrap;
 }
 
+/* ------------------------ FACTION NAV BAR ------------------------ */
 .navbar {
     position: sticky;
     z-index: 1000;
@@ -14,6 +15,7 @@
     opacity: 1;
 }
 
+/* ------------------------ PAGE TITLE ------------------------ */
 .faction-page-title {
     font-family: 'Orbitron', sans-serif;
     background-color: rgb(31, 6, 21);
@@ -36,6 +38,7 @@
     font-size: 3em;
 }
 
+/* ------------------------ FACTIONS AND CHARACTER INFO ------------------------ */
 .lesser-title {
     font-size: 2.5em;
     text-shadow: 0 0 15px #ff47c2, 0 0 25px #ff88f9;
@@ -98,7 +101,7 @@
     left: 0vh;
 }
 
-/* Stat Bars */
+/* ------------------------ STAT BARS ------------------------ */
 .stat-bars {
     display: flex;
     flex-direction: row;
@@ -168,35 +171,27 @@
 
     .character img {
         width: 300px;
-        /* Adjust image width for smaller screens */
     }
     
     .character-container {
         padding: 5px;
-        /* Adjust container padding for smaller screens */
     }
     
     .character {
         margin: 30px 0;
-        /* Adjust character margin for smaller screens */
     }
     
     .character .info-box {
         font-size: 10px;
-        /* Adjust font size for smaller screens */
         padding: 20px;
-        /* Adjust padding for smaller screens */
     }
     
-    /* Include hover effects for smaller screens */
     .character:hover img {
         transform: translateX(-300px);
-        /* Adjust hover effect for smaller screens */
     }
     
     .character:hover .info-box {
         width: 100%;
-        /* Adjust width for smaller screens */
         opacity: 1;
         left: 0;
     }
@@ -213,11 +208,8 @@
     
     .stat-bar {
         margin-bottom: 20px;
-        /* Increase margin for better spacing on smaller screens */
         width: 90%;
-        /* Adjust width to fit the screen width */
         max-width: 400px;
-        /* Limit width on smaller screens */
     }
     
     .bar-name {
@@ -226,17 +218,13 @@
 
     .bar-stat {
         width: 10%;
-        /* Adjust width to fit the screen width */
     }
     
     .bar {
         width: 50%;
         height: 10px;
         margin-left: 2px;
-        /* Adjust width to fit the screen width */
         max-width: 250px;
-        /* Limit width on smaller screens */
         margin-left: 0;
-        /* Remove left margin to center bars */
     }
 }

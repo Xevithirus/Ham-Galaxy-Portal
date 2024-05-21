@@ -38,7 +38,6 @@ body {
     cursor: url(images/spaceship.png), auto;
 }
 
-
 .register-header {
     background: #000 url('./images/Pig-Cafe.png') center / cover;
     text-align: center;
@@ -71,7 +70,7 @@ body {
     text-align: center;
 }
 
-/* Countdown Timer */
+/* ------------------------ COUNTDOWN TIMER ------------------------ */
 .timer-label {
     font-family: 'Orbitron', sans-serif;
     color: rgb(255, 255, 255);
@@ -94,6 +93,7 @@ body {
     margin-top: -20px;
 }
 
+/* ------------------------ DEFAULT FORM  ------------------------ */
 form input {
     cursor: url(images/spaceship.png), auto;
     display: block;
@@ -151,7 +151,7 @@ form .register-button:active {
     cursor: url(images/supernova.png), auto;
 }
 
-/* Mailchimp CSS */
+/* ------------------------ MAILCHIMP FORM ------------------------ */
 form .mc-field-group {
     margin-bottom: 10px;
 }
@@ -188,7 +188,7 @@ form input + .mce_inline_error:before {
     top: -10px;
 } 
 
-/* Successfully Registered Popup CSS */
+/* ------------------------ SUCCESSFUL REGO POPUP ------------------------ */
 #mce-success-response {
     font-family: "Orbitron";
     background-color: yellow;
@@ -201,7 +201,7 @@ form input + .mce_inline_error:before {
     animation: response 1s forwards;
 }
 
-/* Already Registered Error CSS */
+/* ------------------------ REGISTRATION ERROR POPUP ------------------------ */
 #mce-error-response {
     font-family: "Orbitron";
     background-color: #6B0505;

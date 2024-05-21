@@ -1,4 +1,4 @@
-/* General Styles */
+/* ------------------------ GLOBAL STYLES ------------------------ */
 body {
     margin: 0;
     padding: 0;
@@ -16,6 +16,7 @@ button:focus {
     cursor: url(images/spaceship.png), auto;
 }
 
+/* ------------------------ BANNER VIDEO ------------------------ */
 .banner {
     position: relative;
     width: 100%;
@@ -65,6 +66,7 @@ button:focus {
     font-weight: 900;
 }
 
+/* ------------------------ NAV BAR ------------------------ */
 .navbar {
     position: sticky;
     z-index: 1000;
@@ -112,7 +114,7 @@ header a:active {
     background-color: #ff88f9;
 }
 
-/* Hero Section */
+/* ------------------------ HERO SECTION ------------------------ */
 .hero-section {
     text-align: center;
     padding: 20px;
@@ -143,6 +145,7 @@ header a:active {
     -webkit-text-stroke: 0.7px rgb(0, 0, 0);
 }
 
+/* ------------------------ VIDEO CONTAINER ------------------------ */
 .video-container {
     position: relative;
     width: 75%;
@@ -166,6 +169,7 @@ header a:active {
     border: 0;
 }
 
+/* ------------------------ CALL TO ACTION BUTTONS ------------------------ */
 .cta-buttons .cta {
     display: inline-block;
     margin: 0.9em;
@@ -193,7 +197,7 @@ header a:active {
     cursor: url(images/supernova.png), auto;
 }
 
-/* Key Features */
+/* ------------------------ KEY FEATURES AND HIGHLIGHTS ------------------------ */
 .key-features {
     padding: 40px 20px;
     background: #101010;
@@ -235,7 +239,7 @@ header a:active {
     font-size: 1em;
 }
 
-/* What's New */
+/* ------------------------ NEWS ------------------------ */
 .whats-new {
     padding: 40px 20px;
     background: #000000;
@@ -317,7 +321,7 @@ header a:active {
     margin-top: -10px;
 }
 
-/* Responsive Design */
+/* ------------------------ MOBILE SUPPORT ------------------------ */
 @media only screen and (max-width: 768px) {
     .navbar a{
         position: fixed;
