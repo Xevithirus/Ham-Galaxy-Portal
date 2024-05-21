@@ -1,15 +1,13 @@
-/* Global */
-*{
+/* General Styles */
+body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-}
-
-/* Global */
-body {
+    font-family: "Poppins", sans-serif;
+    color: #fff;
+    filter: #000 2px;
     background-color: #000;
-    overflow-x: hidden;  /* Required to prevent side scroll bar appearing due to parallax image bar. */
+    overflow-x: hidden; /* Prevent side scroll */
     cursor: url(images/spaceship.png), auto;
 }
 
@@ -18,49 +16,82 @@ button:focus {
     cursor: url(images/spaceship.png), auto;
 }
 
-/* Global */
-section{
+.banner {
     position: relative;
     width: 100%;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 100px;
-}
-/* ------------------ OPENING VIDEO ---------------------- */
-
-section video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    height: 100vh;
+    overflow: hidden;
     object-fit: cover;
     pointer-events: none;
 }
 
-#title-text {
-    font-size: 140px;
-    font-family: 'Orbitron', sans-serif;
-    font-weight: 900;
+.banner-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translate(-50%, -50%);
+}
+
+.banner-video video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translate(-50%, -50%);
+}
+
+.banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    width: 100%;
+    max-width: 80%;
     text-align: center;
 }
 
-/* ----------------------NAV BAR ------------------------- */
-header {
+.banner-text h2 {
+    font-size: 140px;
+    font-family: 'Orbitron', sans-serif;
+    text-shadow: 0 0 30px #ff47c2, 0 0 50px #ff88f9;
+    font-weight: 900;
+}
+
+.navbar {
     position: sticky;
-    top: 0;
     z-index: 1000;
+    top: 0;
     display: flex;
     justify-content: center;
     background-color: rgba(0, 0, 0, 0.8);
+    padding: 3px;
+    opacity: 0;
+    height: 0px;
+    transition: opacity 0.8s ease-in-out;
+}
+
+.navbar a {
+    font-size: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.navbar.show {
+    opacity: 0.9;
+    height: 30px;
 }
 
 header a {
     color: #ff88f9;
     font-family: 'Orbitron', sans-serif;
-    font-size: 20px;
     font-weight: 500;
     padding: 2px 20px;
     text-decoration: none;
@@ -81,78 +112,173 @@ header a:active {
     background-color: #ff88f9;
 }
 
-
-/* ------------------- MAIN CONTENT ----------------------- */
-.story-title {
-    font-family: 'Orbitron', sans-serif;
-    position: relative;
+/* Hero Section */
+.hero-section {
     text-align: center;
-    color: #fff;
-    text-shadow: 0 0 15px #ff47c2, 0 0 25px #ff88f9;
-    font-size: 4em;
-    font-weight: 600;
-}
-
-#title-text {
+    padding: 20px;
+    background: url('images/Pig-Corridor.png') no-repeat center center/cover;
+    box-shadow: 0 0 15px #ff47c2, 0 0 25px #ff88f9;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
     position: relative;
-    align-items: center;
-    color: #fff;
-    text-shadow: 0 0 30px #ff47c2, 0 0 50px #ff88f9;
-    font-size: 10em;
+    z-index: 10;
 }
 
-.story-text {
-    position: relative;
-    padding-left: 5em;
-    padding-right: 5em;
-    text-align:justify;
-    color: #fff;
-    font-size: 1.8em;
-}
-
-/* ---------------- PARALLAX IMAGE BAR -------------------- */
-#image-track>.image {
-    width: 40vmin;
-    height: 60vmin;
-    object-fit: cover;
-    object-position: 100% 50%;
-}
-
-#image-track {
-    user-select: none;
-    display: flex;
-    gap: 6vmin;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(0%, -50%);
-}
-
-/* --------------- EMBEDDED YOUTUBE VIDEO ---------------- */
-.container-youtube {
-    margin: 0 auto;
-    width: 1280px;
-    height: 720px;
-}
-
-.lesser-title {
-    color: #fff;
-    text-shadow: 0 0 15px #ff47c2, 0 0 25px #ff88f9;
+.hero-content h1 {
     font-size: 2em;
-    text-align: center;
-    padding-bottom: 20px;
+    font-family: "Orbitron", sans-serif;
+    margin: 0.5em 0;
+    color: #fff;
+    font-weight: 900;
+    text-shadow: 0 0 30px #000000;
+    -webkit-text-stroke: 1px rgb(0, 0, 0);
 }
 
+.hero-content p {
+    font-size: 1.8em;
+    font-weight: 700;
+    font-family: "Poppins", sans-serif;
+    margin: 0.5em 0 1em;
+    text-shadow: 0 0 30px #000000;
+    -webkit-text-stroke: 0.7px rgb(0, 0, 0);
+}
+
+.video-container {
+    position: relative;
+    width: 75%;
+    padding-bottom: 42.25%;
+    /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    background: #000;
+    margin: 2em auto;
+    box-shadow: 0 20px 25px #000000, 0 20px 45px #000000;
+    border-radius: 5px;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.cta-buttons .cta {
+    display: inline-block;
+    margin: 0.9em;
+    padding: 0.5em 0.75em;
+    background: #ff47c2e0;
+    color: #000;
+    text-decoration: none;
+    border-radius: 45px;
+    transition: background 0.7s;
+    font-size: 18px;
+    font-family: "Orbitron", sans-serif;
+    font-weight: 500;
+    box-shadow: 0 10px 15px #000000, 0 10px 25px #000000;
+    cursor: url(images/spaceship.png), auto;
+}
+
+.cta-buttons .cta:hover {
+    background: #fff;
+    box-shadow: 0 0 15px #ff47c2, 0 0 25px #ff88f9;
+    transition: 0.7s;
+    cursor: url(images/spaceship.png), auto;
+}
+
+.cta-buttons .cta:active {
+    cursor: url(images/supernova.png), auto;
+}
+
+/* Key Features */
+.key-features {
+    padding: 40px 20px;
+    background: #101010;
+    border-width: 50px;
+    border-color: #ff47c2;
+    text-align: center;
+    z-index: 2;
+}
+
+.key-features h2 {
+    font-family: "Orbitron", sans-serif;
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+
+.features {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.feature {
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background: #1c1c1c;
+    border-radius: 10px;
+    box-shadow: 0 10px 15px #000000, 0 5px 15px #000000;
+}
+
+.feature h3 {
+    font-family: "Orbitron", sans-serif;
+    font-size: 1.4em;
+    margin-bottom: 0.5em;
+}
+
+.feature p {
+    font-size: 1em;
+}
+
+/* What's New */
+.whats-new {
+    padding: 40px 20px;
+    background: #000000;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    box-shadow: 0 0 5px #ff47c2, 0 0 25px #ff88f9;
+        cursor: url(images/spaceship.png), auto;
+}
+
+.whats-new h2 {
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+
+.news-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.news-list li {
+    font-size: 1.2em;
+    margin: 0.5em 0;
+}
+
+.art-competition {
+    color: #ff47c2;
+    text-decoration: none;
+    cursor: url(images/spaceship.png), auto;
+}
+
+.art-competition:active {
+    cursor: url(images/supernova.png), auto;
+}
 
 /* ----------------------- FOOTER ------------------------ */
-footer {
-    background-color: #000;
-}
-
 .footer-class {
     display: flex;
     justify-content: center;
     width: 100%;
+    margin-top: 40px;
+    margin-bottom: 0px;
 }
 
 .social-icons {
@@ -187,112 +313,136 @@ footer {
     justify-content: center;
     color: #ff88f9;
     font-size: 20px;
-    padding: 0px 0px 50px;
+    padding: 0px 0px 20px;
+    margin-top: -10px;
 }
 
-/* ---------------------- MOBILE SUPPORT --------------------------*/
-@media (max-width: 768px) {
-    section {
-        padding: 50px 20px;
+/* Responsive Design */
+@media only screen and (max-width: 768px) {
+    .navbar a{
+        position: fixed;
+        height: 12px;
+        flex-direction: column;
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+    
+    .navbar.show {
+        opacity: 0.9;
+        height: 12px;
+    }
+}
+
+header a {
+    font-size: 2.1vw;
+    font-weight: 500;
+    padding: 0px 4vw;
+}
+
+@media (min-width: 768px) {
+    .hero-content h1 {
+        font-size: 3em;
     }
 
-    .story-title {
+    .hero-content p {
+        font-size: 1.5em;
+    }
+
+    .cta-buttons .cta {
+        padding: 1em 2em;
+    }
+
+    .features {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .feature {
+        flex: 1 1 300px;
+    }
+
+    .feature h3 {
+        font-size: 1.5em;
+    }
+
+    .feature p {
+        font-size: 1em;
+    }
+}
+
+@media (min-width: 480px) and (max-width: 767px) {
+    .hero-content h1 {
         font-size: 2.5em;
     }
 
-    #title-text {
-        font-size: 4em;
-        text-align: center;
+    .hero-content p {
+        font-size: 1.3em;
     }
 
-    .story-text {
-        padding: 20px;
+    .cta-buttons .cta {
+        padding: 0.9em 1.6em;
+    }
+
+    .features {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .feature {
+        flex: 1 1 45%;
+        max-width: 45%;
+    }
+
+    .feature h3 {
+        font-size: 1.4em;
+    }
+
+    .feature p {
+        font-size: 0.95em;
+    }
+}
+
+@media (max-width: 479px) {
+    .banner-text h2 {
+        font-size: 3em;
+    }
+
+    .hero-content h1 {
+        font-size: 2em;
+    }
+
+    .hero-content p {
+        font-size: 1em;
+    }
+
+    .cta-buttons .cta {
+        padding: 0.5em 1em;
+        font-size: 1em;
+    }
+
+    .features {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feature {
+        width: 90%;
+        max-width: 300px;
+        padding: 15px;
+    }
+
+    .feature h3 {
         font-size: 1.2em;
     }
 
-    header a {
-        font-size: 8px;
-        padding: 2px 10px;
-    }
-
-    #image-track {
-        width: 100%;
-        /* Adjust width to fit the screen width */
-        left: 0;
-        /* Position the parallax scroll bar at the left edge of the screen */
-        top: 50%;
-        /* Center vertically */
-        transform: translateY(-50%);
-        /* Adjust vertical positioning */
-        justify-content: center;
-        /* Center the images horizontally */
-        gap: 20px;
-        /* Increase gap between images for better spacing on smaller screens */
-        overflow-x: auto;
-        /* Enable horizontal scrolling if needed */
-        overflow-y: hidden;
-        /* Disable vertical scrolling */
-        white-space: nowrap;
-        /* Prevent wrapping of images */
-    }
-
-    #image-track {
-        width: 100%;
-        /* Adjust width to fit the screen width */
-        left: 0;
-        /* Position the parallax scroll bar at the left edge of the screen */
-        top: 50%;
-        /* Center vertically */
-        transform: translateY(-50%);
-        /* Adjust vertical positioning */
-        justify-content: flex-start;
-        /* Start the images from the left edge */
-        gap: 20px;
-        /* Increase gap between images for better spacing on smaller screens */
-        overflow-x: auto;
-        /* Enable horizontal scrolling if needed */
-        overflow-y: hidden;
-        /* Disable vertical scrolling */
-        white-space: nowrap;
-        /* Prevent wrapping of images */
-    }
-
-    #image-track>.image {
-        width: 80vw;
-        /* Adjust width relative to the viewport width */
-        height: auto;
-        /* Allow height to adjust proportionally */
-        max-width: none;
-        /* Remove max-width restriction */
-    }
-
-    .container-youtube {
-        width: 100%;
-        /* Adjust width to fit the screen width */
-        height: auto;
-        /* Let the height adjust proportionally */
-        max-width: 100%;
-        /* Ensure video doesn't overflow on small screens */
-        padding: 0 20px;
-        /* Add padding to adjust for smaller screens */
-    }
-
-    .social-icons a {
-        font-size: 1.5em;
+    .feature p {
+        font-size: 0.9em;
     }
 
     .footer-bottom p {
         font-size: 16px;
     }
 }
-
-/* Attributions for cursor images */
-
-/*
-Spaceship:
-<a href="https://www.flaticon.com/free-icons/spaceship" title="spaceship icons">Spaceship icons created by Flat Icons - Flaticon</a>
-
-Explosion:
-<a href="https://www.flaticon.com/free-icons/explosion" title="explosion icons">Explosion icons created by Victoruler - Flaticon</a>
-
-*/
