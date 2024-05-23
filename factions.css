@@ -3,18 +3,6 @@
     flex-wrap: wrap;
 }
 
-/* ------------------------ FACTION NAV BAR ------------------------ */
-.navbar {
-    position: sticky;
-    z-index: 1000;
-    top: 0;
-    display: flex;
-    justify-content: center;
-    background-color: rgba(0, 0, 0, 0.8);
-    padding-bottom: 30px;
-    opacity: 1;
-}
-
 /* ------------------------ PAGE TITLE ------------------------ */
 .faction-page-title {
     font-family: 'Orbitron', sans-serif;

@@ -1,36 +1,5 @@
-/* ------------------------------ HEADER -------------------------------- */
-.navbar {
-    position: sticky;
-    top: 0;
-    display: flex;
-    justify-content: center;
-    background-color: rgba(0, 0, 0, 0.8);
-    padding: 3px;
-}
 
-header a {
-    color: #ff88f9;
-    font-family: 'Orbitron', sans-serif;
-    font-size: 20px;
-    font-weight: 500;
-    padding: 2px 20px;
-    text-decoration: none;
-    text-align: center;
-    border-radius: 30px;
-}
 
-header a:hover {
-    transition: 0.7s;
-    color: #fff;
-    text-shadow: 0 0 30px #ff47c2, 0 0 50px #ff88f9;
-    cursor: url(images/spaceship.png), auto;
-}
-
-header a:active {
-    cursor: url(images/supernova.png), auto;
-    color: #000;
-    background-color: #ff88f9;
-}
 
 /* ------------------------------ MAIN CONTENT --------------------------------- */
 body {
@@ -39,7 +8,7 @@ body {
 }
 
 .register-header {
-    background: #000 url('./images/Pig-Cafe.png') center / cover;
+    background: #000 url('./images/HG-Concept-Screenshot.jpg') center / cover;
     text-align: center;
     padding: 80px 0;
     color: white;
@@ -289,26 +258,18 @@ form label .asterisk {
 
 /* ----------------------- MOBILE SUPPORT ---------------------- */
 @media screen and (max-width: 768px) {
-    .navbar {
-        padding: 10px;
-        z-index: 1000;
-    }
-    
-    header a {
-        font-size: 10px;
-        padding: 5px 10px;
-    }
     
     .register-header {
         padding: 40px 0;
         height: auto;
         margin-bottom: 20px;
         box-shadow: none;
-    }
+    } 
 
     .container {
         max-width: 100%;
         padding: 0 10px;
+        margin-top: 60px;
     }
 
     .register-title {
@@ -323,7 +284,7 @@ form label .asterisk {
     }
 
     .countdown-timer #timer {
-        font-size: 40px;
+        font-size: 35px;
     }
 
     form input {

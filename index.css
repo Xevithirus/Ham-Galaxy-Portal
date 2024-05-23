@@ -7,13 +7,19 @@ body {
     color: #fff;
     filter: #000 2px;
     background-color: #000;
-    overflow-x: hidden; /* Prevent side scroll */
+    overflow-x: hidden; /* Prevent overflows and side scroll */
     cursor: url(images/spaceship.png), auto;
+    position: relative;
 }
 
 button:hover,
 button:focus {
     cursor: url(images/spaceship.png), auto;
+}
+
+.flex {
+    display: flex;
+    gap: var(--gap, 2rem);
 }
 
 /* ------------------------ BANNER VIDEO ------------------------ */
@@ -67,51 +73,113 @@ button:focus {
 }
 
 /* ------------------------ NAV BAR ------------------------ */
-.navbar {
-    position: sticky;
-    z-index: 1000;
-    top: 0;
-    display: flex;
-    justify-content: center;
-    background-color: rgba(0, 0, 0, 0.8);
-    padding: 3px;
-    opacity: 0;
-    height: 0px;
-    transition: opacity 0.8s ease-in-out;
+.logo {
+    margin: 1rem;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
 }
 
-.navbar a {
-    font-size: 20px;
-    padding-left: 25px;
-    padding-right: 25px;
+.primary-header {
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 2000;
+    width: 100%;
 }
 
-.navbar.show {
-    opacity: 0.9;
-    height: 30px;
+.mobile-nav-toggle {
+    display: none;
 }
 
-header a {
-    color: #ff88f9;
-    font-family: 'Orbitron', sans-serif;
-    font-weight: 500;
-    padding: 2px 20px;
+.primary-nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background: hsl(0 0% 0% / 0.5);
+}
+
+/* for browser support check */
+@supports (backdrop-filter: blur(1rem)){
+    .primary-nav {
+        background: hsl(0 0% 100% / 0.1);
+        backdrop-filter: blur(1rem);
+    }
+}
+
+.primary-nav a {
     text-decoration: none;
-    text-align: center;
-    border-radius: 50px;
-}
-
-header a:hover {
-    transition: 0.7s;
-    color: #fff;
-    text-shadow: 0 0 30px #ff47c2, 0 0 50px #ff88f9;
+    font-family: "Orbitron", sans-serif;
+    color: white;
     cursor: url(images/spaceship.png), auto;
 }
 
-header a:active {
+.primary-nav a:hover {
+    color: white;
+    font-weight: 700;
+    text-shadow: 0 0 30px #ff47c2, 0 0 50px #ff88f9;
+    transition: 300ms;
+}
+
+.primary-nav a:active {
     cursor: url(images/supernova.png), auto;
-    color: #000;
-    background-color: #ff88f9;
+}
+
+/* aria-hidden prevents screen reader from reading out whats in the span for experience */
+.primary-nav a > [aria-hidden="true"] {  
+    font-weight: 700;
+    margin-inline-end: 0.75em;
+}
+
+@media (max-width: 35em) {
+    .primary-nav {
+        --gap: 2em;
+
+        position: fixed;
+        z-index: 1000;
+        /* inset is shorthand for top bottom left and right margin. */
+        inset: 0 0 0 30%; 
+
+        flex-direction: column;
+        padding: min(30vh, 10rem) 2em; 
+
+        transform: translateX(100%);
+        transition: transform 450ms ease-out;
+
+    }
+
+    .primary-nav[data-visible="true"] {
+        transform: translateX(0%);
+    }
+    
+    .mobile-nav-toggle {
+        display: block;
+        color: white;
+        text-shadow: 0 0 30px #ff47c2, 0 0 50px #ff88f9;
+        position: fixed;
+        z-index: 9999;
+        width: 2.5rem;
+        aspect-ratio: 3;
+        font-size: 30px;
+        top: 1.8rem;
+        right: 3rem;
+        border: 0;
+        background-color: #ffffff00;
+    }
+}
+
+@media (min-width: 35em) and (max-width: 55em) {
+    .primary-nav a > span[aria-hidden]{
+        display: none;
+    }
+}
+
+@media (min-width: 35em) {
+    .primary-nav {
+        --gap: clamp(1.5rem, 5vw, 3rem);
+        padding-block: 2rem;
+        padding-inline: clamp(3rem, 8vw, 10rem);
+    }
 }
 
 /* ------------------------ HERO SECTION ------------------------ */
@@ -322,27 +390,7 @@ header a:active {
 }
 
 /* ------------------------ MOBILE SUPPORT ------------------------ */
-@media only screen and (max-width: 768px) {
-    .navbar a{
-        position: fixed;
-        height: 12px;
-        flex-direction: column;
-        background-color: rgba(0, 0, 0, 0.8);
-    }
-    
-    .navbar.show {
-        opacity: 0.9;
-        height: 12px;
-    }
-}
-
-header a {
-    font-size: 2.1vw;
-    font-weight: 500;
-    padding: 0px 4vw;
-}
-
-@media (min-width: 768px) {
+@media (min-width: 768px) { 
     .hero-content h1 {
         font-size: 3em;
     }
@@ -376,6 +424,11 @@ header a {
 }
 
 @media (min-width: 480px) and (max-width: 767px) {
+    .banner-text h2 {
+        font-size: 90px;
+        font-weight: 700;
+    }
+    
     .hero-content h1 {
         font-size: 2.5em;
     }

@@ -9,17 +9,52 @@
     <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Poppins:300,400,600,700&amp;lang=en" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" />
     <script src="https://kit.fontawesome.com/9e4cb2d322.js" crossorigin="anonymous"></script>
+    <script defer src="script.js"></script>
 </head>
 
 <body>
-    <header class="navbar">
-        <a href="index.html">Home</a>
-        <a href="factions.html">Factions</a>
-        <a href="#">Database</a>
-        <a href="register.html">Register</a>
-        <a href="./Quake3/Quake3Game.htm">Play</a>
-        <a href="#">Shop</a>
+    <header class="primary-header flex">
+        <nav>
+            <img src="./images/HGlogo.png" alt="logo" class="logo">
+        </nav>
+
+        <!-- adds screen reader only text for menu -->
+        <button class="mobile-nav-toggle" aria-controls="primary-nav" aria-expanded="false">
+            <i class="fa-solid fa-bars"></i>
+            <span class="sr-only">Menu</span>
+        </button>
+
+        <nav>
+            <ul id="primary-nav" data-visible="false" class="primary-nav flex">
+                <li class="active">
+                    <a href="index.html">
+                        <span aria-hidden="true">00</span>Home
+                    </a>
+                </li>
+                <li class="active">
+                    <a href="factions.html">
+                        <span aria-hidden="true">01</span>Factions
+                    </a>
+                </li>
+                <li class="active">
+                    <a href="#">
+                        <span aria-hidden="true">02</span>Database
+                    </a>
+                </li>
+                <li class="active">
+                    <a href="register.html">
+                        <span aria-hidden="true">03</span>Play
+                    </a>
+                </li>
+                <li class="active">
+                    <a href="#">
+                        <span aria-hidden="true">04</span>Shop
+                    </a>
+                </li>
+            </ul>
+        </nav>
     </header>
+    <!-- href="./Quake3/Quake3Game.htm" -->
     <section class="banner">
         <div class="banner-video">
             <video src="video/dna-background.mp4" autoplay muted loop></video>
@@ -94,25 +129,25 @@
             let value = 1 + window.scrollY / -900;
             video.style.opacity = value;
         })
-        // navbar fade-in
-        document.addEventListener("DOMContentLoaded", function () {
-            const navbar = document.querySelector('.navbar');
-            let lastScrollTop = 0;
+        // // navbar fade-in
+        // document.addEventListener("DOMContentLoaded", function () {
+        //     const navbar = document.querySelector('.navbar');
+        //     let lastScrollTop = 0;
 
-            window.addEventListener('scroll', function () {
-                const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        //     window.addEventListener('scroll', function () {
+        //         const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
-                if (scrollTop > lastScrollTop) {
-                    // User is scrolling down
-                    navbar.classList.add('show');
-                } else if (scrollTop === 0) {
-                    // User is back at the top
-                    navbar.classList.remove('show');
-                }
+        //         if (scrollTop > lastScrollTop) {
+        //             // User is scrolling down
+        //             navbar.classList.add('show');
+        //         } else if (scrollTop === 0) {
+        //             // User is back at the top
+        //             navbar.classList.remove('show');
+        //         }
 
-                lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
-            });
-        });
+        //         lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+        //     });
+        // });
     </script>
 </body>
 

@@ -13,15 +13,49 @@
 </head>
 
 <body>
-    <header class="navbar">
-        <a href="index.html">Home</a>
-        <a href="factions.html">Factions</a>
-        <a href="#">Database</a>
-        <a href="register.html">Register</a>
-        <a href="./Quake3/Quake3Game.htm">Play</a>
-        <a href="#">Shop</a>
+    <header class="primary-header flex">
+        <nav>
+            <img src="./images/HGlogo.png" alt="logo" class="logo">
+        </nav>
+    
+        <!-- adds screen reader only text for menu -->
+        <button class="mobile-nav-toggle" aria-controls="primary-nav" aria-expanded="false">
+            <i class="fa-solid fa-bars"></i>
+            <span class="sr-only">Menu</span>
+        </button>
+    
+        <nav>
+            <ul id="primary-nav" data-visible="false" class="primary-nav flex">
+                <li class="active">
+                    <a href="index.html">
+                        <span aria-hidden="true">00</span>Home
+                    </a>
+                </li>
+                <li class="active">
+                    <a href="factions.html">
+                        <span aria-hidden="true">01</span>Factions
+                    </a>
+                </li>
+                <li class="active">
+                    <a href="#">
+                        <span aria-hidden="true">02</span>Database
+                    </a>
+                </li>
+                <li class="active">
+                    <a href="register.html">
+                        <span aria-hidden="true">03</span>Play
+                    </a>
+                </li>
+                <li class="active">
+                    <a href="#">
+                        <span aria-hidden="true">04</span>Shop
+                    </a>
+                </li>
+            </ul>
+        </nav>
     </header>
     <div>
+        <br><br><br><br>
         <h1 class="faction-page-title">FACTIONS</h1>
     </div>
     <div class="character-container">
