@@ -4,6 +4,8 @@
 
 .search-bar input {
     padding: 5px;
+    font-family: "Orbitron", sans-serif;
+    color: #fff;
     font-size: 16px;
     margin-top: 80px;
     background-color: #444;
