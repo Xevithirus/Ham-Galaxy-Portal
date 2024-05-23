@@ -75,6 +75,7 @@
 
 .character:hover img {
     transform: translateX(-600px);
+    cursor: url(images/spaceship-charged.png), auto;
 }
 
 .character:hover .info-box {
@@ -82,6 +83,7 @@
     opacity: 1;
     width: 900px;
     left: 0vh;
+    cursor: url(images/spaceship-charged.png), auto;
 }
 .character:not(:hover) .info-box {
     transition: 0.5s;

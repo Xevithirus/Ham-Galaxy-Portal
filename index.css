@@ -14,7 +14,7 @@ body {
 
 button:hover,
 button:focus {
-    cursor: url(images/spaceship.png), auto;
+    cursor: url(images/spaceship-charged.png), auto;
 }
 
 .flex {
@@ -119,6 +119,7 @@ button:focus {
     font-weight: 700;
     text-shadow: 0 0 30px #ff47c2, 0 0 50px #ff88f9;
     transition: 300ms;
+    cursor: url(images/spaceship-charged.png), auto;
 }
 
 .primary-nav a:active {
@@ -258,7 +259,7 @@ button:focus {
     background: #fff;
     box-shadow: 0 0 15px #ff47c2, 0 0 25px #ff88f9;
     transition: 0.7s;
-    cursor: url(images/spaceship.png), auto;
+    cursor: url(images/spaceship-charged.png), auto;
 }
 
 .cta-buttons .cta:active {
@@ -315,7 +316,7 @@ button:focus {
     position: relative;
     z-index: 1;
     box-shadow: 0 0 5px #ff47c2, 0 0 25px #ff88f9;
-        cursor: url(images/spaceship.png), auto;
+    cursor: url(images/spaceship.png), auto;
 }
 
 .whats-new h2 {
@@ -338,6 +339,10 @@ button:focus {
     color: #ff47c2;
     text-decoration: none;
     cursor: url(images/spaceship.png), auto;
+}
+
+.art-competition:hover {
+    cursor: url(images/spaceship-charged.png), auto;
 }
 
 .art-competition:active {
@@ -370,7 +375,7 @@ button:focus {
 }
 
 .social-icons a:hover {
-    cursor: url(images/spaceship.png), auto;
+    cursor: url(images/spaceship-charged.png), auto;
     transition: 0.7s;
     color: #fff;
     text-shadow: 0 0 15px #ff47c2, 0 0 25px #ff88f9;

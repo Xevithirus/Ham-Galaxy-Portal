@@ -113,7 +113,7 @@ form .register-button:hover {
     background-color: #ff47c2;
     border: #471945 2px solid;
     color: black;
-    cursor: url(images/spaceship.png), auto;
+    cursor: url(images/spaceship-charged.png), auto;
 }
 
 form .register-button:active {
@@ -217,6 +217,10 @@ form label .asterisk {
     color: #ff47c2;
     text-decoration: none;
     cursor: url(images/spaceship.png), auto;
+}
+
+.quake3-submodule:hover {
+    cursor: url(images/spaceship-charged.png), auto;
 }
 
 .quake3-submodule:active {
