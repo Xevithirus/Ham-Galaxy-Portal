@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Database</title>
+    <link rel="stylesheet" href="database.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Poppins:300,400,600,700&amp;lang=en" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" />
+    <script src="https://kit.fontawesome.com/9e4cb2d322.js" crossorigin="anonymous"></script>
+    <script defer src="script.js"></script> 
+</head>
+
+<body>
+    <header class="primary-header flex">
+        <nav>
+            <img src="./images/HGlogo.png" alt="logo" class="logo">
+        </nav>
+    
+        <!-- adds screen-reader-only text for menu -->
+        <button class="mobile-nav-toggle" aria-controls="primary-nav" aria-expanded="false">
+            <i class="fa-solid fa-bars"></i>
+            <span class="sr-only">Menu</span>
+        </button>
+        <nav>
+            <ul id="primary-nav" data-visible="false" class="primary-nav flex">
+                <li class="active">
+                    <a href="index.html">
+                        <span aria-hidden="true">00</span>Home
+                    </a>
+                </li>
+                <li class="active">
+                    <a href="factions.html">
+                        <span aria-hidden="true">01</span>Factions
+                    </a>
+                </li>
+                <li class="active">
+                    <a href="database.html">
+                        <span aria-hidden="true">02</span>Database
+                    </a>
+                </li>
+                <li class="active">
+                    <a href="register.html">
+                        <span aria-hidden="true">03</span>Play
+                    </a>
+                </li>
+                <li class="active">
+                    <a href="#">
+                        <span aria-hidden="true">04</span>Shop
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="search-bar">
+            <input type="text">
+            <button>Search</button>
+        </div>
+        <section class="seasonal-topics">
+            <h2>Seasonal Topics</h2>
+            <div class="featured-guide">
+                <img src="images/HG Wallpaper Ultra Wide.png" alt="Beginner's Guide">
+                <h3>Beginners Guide to Ham Galaxy</h3>
+                <p>by Ham Solo | Nov 2024</p>
+            </div>
+            <div class="guides-list">
+                <div class="guide">
+                    <img src="images/Pig-Shop.png" alt="Species Selection">
+                    <h3>Species Selection</h3>
+                    <p>by Ham Solo | Nov 2024</p>
+                </div>
+                <div class="guide">
+                    <img src="images/Pig-Laser-Carbine.png" alt="Tech Repo">
+                    <h3>Tech Repo</h3>
+                    <p>by Ham Solo | Nov 2024</p>
+                </div>
+                <div class="guide">
+                    <img src="images/Red-Fighter.png" alt="Enemy Codex">
+                    <h3>Enemy Codex</h3>
+                    <p>by Ham Solo | Nov 2024</p>
+                </div>
+                <div class="guide">
+                    <img src="images/Chimp-Colony.png" alt="Story">
+                    <h3>The Legend of Ham Galaxy</h3>
+                    <p>by Ham Solo | Nov 2024</p>
+                </div>
+            </div>
+        </section>
+        <section class="hot-topics">
+            <h2>Hot Topics</h2>
+            <div class="hot-topics-list">
+                <div class="topic">
+                    <img src="images/Hognaut.png" alt="Primer: Pigs">
+                    <h3>Primer: Pigs</h3>
+                </div>
+                <div class="topic">
+                    <img src="images/AstroChimp.png" alt="Primer: Chimps">
+                    <h3>Primer: Chimps</h3>
+                </div>
+                <div class="topic">
+                    <img src="images/cat.png" alt="Primer: Cats">
+                    <h3>Primer: Cats</h3>
+                </div>
+                <!-- Add more topics as needed -->
+            </div>
+        </section>
+        <footer>
+            <div class="footer-class">
+                <div class="social-icons">
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href=""><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <br>
+                <p>Copyright &copy; 2024 <span class="company">Emporos Digital Ltd</span></p>
+            </div>
+        </footer>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
