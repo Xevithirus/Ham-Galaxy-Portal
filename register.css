@@ -213,6 +213,16 @@ form label .asterisk {
 
 /* ------------------------ FOOTER & SOCIAL ICONS -----------------------  */
 
+.quake3-submodule {
+    color: #ff47c2;
+    text-decoration: none;
+    cursor: url(images/spaceship.png), auto;
+}
+
+.quake3-submodule:active {
+    cursor: url(images/supernova.png), auto;
+}
+
 .footer-class {
     display: flex;
     justify-content: center;
