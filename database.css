@@ -69,12 +69,26 @@ main {
     border-radius: 5px;
 }
 
+.featured-guide a {
+    display: block;
+    text-align: center;
+}
+
 .featured-guide img {
     box-shadow: 0 4px 8px #020202, 0px 5px 25px #000000;
     max-width: 98%;
+    overflow: hidden;
+    align-items: center;
     margin-top: 1%;
     height: auto;
     border-radius: 5px;
+    cursor: url(images/spaceship.png), auto;
+}
+
+.featured-guide img:hover {
+    cursor: url(images/spaceship-charged.png), auto;
+    box-shadow: 0 0 15px #ff47c2, 0 0 25px #ff88f9;
+    transition: 0.5s;
 }
 
 .guides-list,
@@ -96,9 +110,17 @@ main {
 .guide img,
 .topic img {
     max-width: 100%;
+    overflow: hidden;
     height: auto;
     border-radius: 5px;
     box-shadow: 0 4px 8px #020202, 0px 5px 25px #000000;
+}
+
+.guide img:hover,
+.topic img:hover {
+    cursor: url(images/spaceship-charged.png), auto;
+    box-shadow: 0 0 15px #ff47c2, 0 0 25px #ff88f9;
+    transition: 0.5s;
 }
 
 @media (max-width: 768px) {
