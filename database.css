@@ -1,3 +1,5 @@
+/*-------------------- SEARCH BAR ------------------------*/
+
 .search-bar {
     display: flex;
 }
@@ -47,12 +49,24 @@
     cursor: url(images/supernova.png), auto;
 }
 
+@media (max-width: 768px) {
+    .search-bar input {
+        display: flex;
+        font-size: 10px;
+    }
+    .search-bar button {
+        font-size: 10px;
+    }
+} 
+    
+/* ---------------------- MAIN CONTENT -------------------------- */
 main {
     padding: 20px;
 }
 
 .seasonal-topics,
 .hot-topics {
+    margin-top: 40px;
     margin-bottom: 30px;
 }
 

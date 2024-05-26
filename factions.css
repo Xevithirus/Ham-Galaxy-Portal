@@ -160,7 +160,7 @@
     }
 
     .character img {
-        width: 300px;
+        width: 200px;
     }
     
     .character-container {
@@ -174,14 +174,16 @@
     .character .info-box {
         font-size: 10px;
         padding: 20px;
+        height: 350px;
     }
     
     .character:hover img {
         transform: translateX(-300px);
+        margin-bottom: 140px;
     }
     
     .character:hover .info-box {
-        width: 100%;
+        width: 90%;
         opacity: 1;
         left: 0;
     }

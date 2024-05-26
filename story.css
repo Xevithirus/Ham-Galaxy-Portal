@@ -1,22 +1,4 @@
-/* Global */
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-}
 
-/* Global */
-body {
-    background-color: #000;
-    overflow-x: hidden;  /* Required to prevent side scroll bar appearing due to parallax image bar. */
-    cursor: url(images/spaceship.png), auto;
-}
-
-button:hover,
-button:focus {
-    cursor: url(images/spaceship.png), auto;
-}
 
 /* Global */
 section{
@@ -26,63 +8,17 @@ section{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 100px;
-}
-/* ------------------ OPENING VIDEO ---------------------- */
-
-section video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    pointer-events: none;
-}
-
-#title-text {
-    font-size: 140px;
-    font-family: 'Orbitron', sans-serif;
-    font-weight: 900;
-    text-align: center;
-}
-
-/* ----------------------NAV BAR ------------------------- */
-header {
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    display: flex;
-    justify-content: center;
-    background-color: rgba(0, 0, 0, 0.8);
-}
-
-header a {
-    color: #ff88f9;
-    font-family: 'Orbitron', sans-serif;
-    font-size: 20px;
-    font-weight: 500;
-    padding: 2px 20px;
-    text-decoration: none;
-    text-align: center;
-    border-radius: 50px;
-}
-
-header a:hover {
-    transition: 0.7s;
-    color: #fff;
-    text-shadow: 0 0 30px #ff47c2, 0 0 50px #ff88f9;
-    cursor: url(images/spaceship.png), auto;
-}
-
-header a:active {
-    cursor: url(images/supernova.png), auto;
-    color: #000;
-    background-color: #ff88f9;
+    overflow: hidden;
 }
 
 
 /* ------------------- MAIN CONTENT ----------------------- */
+.story-img {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
 .story-title {
     font-family: 'Orbitron', sans-serif;
     position: relative;
@@ -91,6 +27,7 @@ header a:active {
     text-shadow: 0 0 15px #ff47c2, 0 0 25px #ff88f9;
     font-size: 4em;
     font-weight: 600;
+    margin-top: 130px;
 }
 
 #title-text {
@@ -128,74 +65,10 @@ header a:active {
     transform: translate(0%, -50%);
 }
 
-/* --------------- EMBEDDED YOUTUBE VIDEO ---------------- */
-.container-youtube {
-    margin: 0 auto;
-    width: 1280px;
-    height: 720px;
-}
-
-.lesser-title {
-    color: #fff;
-    text-shadow: 0 0 15px #ff47c2, 0 0 25px #ff88f9;
-    font-size: 2em;
-    text-align: center;
-    padding-bottom: 20px;
-}
-
-
-/* ----------------------- FOOTER ------------------------ */
-footer {
-    background-color: #000;
-}
-
-.footer-class {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-}
-
-.social-icons {
-    display: flex;
-    justify-content: center;
-}
-
-.social-icons a {
-    text-decoration: none;
-    padding: 10px;
-    margin: 0px;
-    border-radius: 50%;
-    border-color: #ff88f9;
-    font-size: 2em;
-    color: rgb(243, 155, 255);
-    opacity: 0.9;
-}
-
-.social-icons a:hover {
-    cursor: url(images/spaceship.png), auto;
-    transition: 0.7s;
-    color: #fff;
-    text-shadow: 0 0 15px #ff47c2, 0 0 25px #ff88f9;
-}
-
-.social-icons a:active {
-    cursor: url(images/supernova.png), auto;
-}
-
-.footer-bottom p {
-    display: flex;
-    justify-content: center;
-    color: #ff88f9;
-    font-size: 20px;
-    padding: 0px 0px 50px;
-}
 
 /* ---------------------- MOBILE SUPPORT --------------------------*/
 @media (max-width: 768px) {
-    section {
-        padding: 50px 20px;
-    }
-
+ 
     .story-title {
         font-size: 2.5em;
     }
@@ -208,11 +81,6 @@ footer {
     .story-text {
         padding: 20px;
         font-size: 1.2em;
-    }
-
-    header a {
-        font-size: 8px;
-        padding: 2px 10px;
     }
 
     #image-track {
@@ -266,24 +134,6 @@ footer {
         /* Remove max-width restriction */
     }
 
-    .container-youtube {
-        width: 100%;
-        /* Adjust width to fit the screen width */
-        height: auto;
-        /* Let the height adjust proportionally */
-        max-width: 100%;
-        /* Ensure video doesn't overflow on small screens */
-        padding: 0 20px;
-        /* Add padding to adjust for smaller screens */
-    }
-
-    .social-icons a {
-        font-size: 1.5em;
-    }
-
-    .footer-bottom p {
-        font-size: 16px;
-    }
 }
 
 /* Attributions for cursor images */
