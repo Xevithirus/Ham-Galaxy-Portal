@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ham Galaxy Portal</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" />
+    <script src="https://kit.fontawesome.com/9e4cb2d322.js" crossorigin="anonymous"></script>
+    <script defer src="script.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+    
+        html,
+        body {
+            height: 100%;
+        }
+    
+        .container {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            background: url('./images/construction.png') no-repeat center center/cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: rgb(255, 255, 255);
+            font-size: 3.5em;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+        }
+    
+        .message {
+            background: rgba(0, 0, 0, 0.8);
+            padding: 30px;
+            padding-left: 80px;
+            padding-right: 80px;
+            border-radius: 5px;
+            font-family: "Orbitron", sans-serif;
+            text-shadow: 0 0 30px #ff47c2, 0 0 50px #ff88f9;
+            font-weight: 600;  
+        }
+
+        @media (max-width: 35em){
+            .message{
+                padding-left: 10px;
+                padding-right: 10px;
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="primary-header flex">
+        <nav>
+            <img src="./images/HGlogo.png" alt="logo" class="logo">
+        </nav>
+    
+        <!-- adds screen-reader-only text for menu -->
+        <button class="mobile-nav-toggle" aria-controls="primary-nav" aria-expanded="false">
+            <i class="fa-solid fa-bars"></i>
+            <span class="sr-only">Menu</span>
+        </button>
+    
+        <nav>
+            <ul id="primary-nav" data-visible="false" class="primary-nav flex">
+                <li class="active">
+                    <a href="index.html">
+                        <span aria-hidden="true">00</span>Home
+                    </a>
+                </li>
+                <li class="active">
+                    <a href="factions.html">
+                        <span aria-hidden="true">01</span>Factions
+                    </a>
+                </li>
+                <li class="active">
+                    <a href="database.html">
+                        <span aria-hidden="true">02</span>Database
+                    </a>
+                </li>
+                <li class="active">
+                    <a href="register.html">
+                        <span aria-hidden="true">03</span>Play
+                    </a>
+                </li>
+                <li class="active">
+                    <a href="under-construction.html">
+                        <span aria-hidden="true">04</span>Shop
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="message">
+            This page is under construction.
+        </div>
+    </div>
+</body>
+</html>
